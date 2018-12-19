@@ -5,11 +5,11 @@ import argparse
 parser = argparse.ArgumentParser(
     description='Import notes column from xlsx to another xlsx.')
 
-parser.add_argument('--file1', type=str,
+parser.add_argument('file1', type=str,
                     help='the previous file to extract notes')
-parser.add_argument('--file2', type=str,
+parser.add_argument('file2', type=str,
                     help='the file to append previous notes')
-parser.add_argument('--start', type=str,
+parser.add_argument('start', type=str,
                     help='the name of the first header column (Last Name)')
 
 
